@@ -4,7 +4,7 @@ import bs4.element
 import requests
 from bs4 import BeautifulSoup
 
-# 获取指定页面的内容
+# 由于其界面没有检索功能，因此写此代码来检索，未添加时间检索
 def get_page_content(url,keyword):
     response = requests.get(url)
     response.encoding=response.apparent_encoding
